@@ -5,6 +5,7 @@ const mongoURL=process.env.DB_URL
 
 export default function connectToDB(){
     mongoose.set('strictQuery',false);
+    console.log(mongoURL)
     mongoose.connect(mongoURL)
     mongoose.connection.on('connected',()=>{
         console.log('database connected')
