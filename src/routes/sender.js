@@ -17,7 +17,7 @@ route.post('/',async (req,res)=>{
         const mailBody={
             to:process.env.RECIEVER,
             from:{
-                name:process.env.SENER_NAME,
+                name:process.env.SENDER_NAME,
                 email:process.env.SENDER_EMAIL
             },
             subject:"Request data from User.Table",
